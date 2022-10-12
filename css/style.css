@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+
+:root{
+    --heading-font: 'Montserrat';
+    --body-font:'Poppins';
+    --greycolor:#999999;
+    --section-color:#f7f7f7;
+
+}
+
+
+h1,h2,h3,h4,h5{
+    font-family: var(--heading-font);
+}
+
+/*helper classes */
+.icon-container{
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+h3.section-head-title {
+    font-weight: 900;
+    font-size: 35px;
+     /* background-color: aquamarine; */
+     position: relative;
+     display: inline-block;
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: 4;
+     height: 80px;
+     
+}
+h3.section-head-title::after{
+    content: " ";
+    position: absolute;
+     background-image: url("../img/dots.png"); 
+     background-position: center center; 
+    width: 100%;
+    height: 30%;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: black; */
+}
+
+
+.header-icon .icon-container{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/*header style */
+
+@keyframes slideto-top-btm {
+
+    0%{
+       
+        
+        top: -100%;
+        height: 0;
+        width: 100%;
+        
+    }
+    10%{
+        top: 50%;
+        height: 0;
+        width: 100%;
+        
+    }
+    50%{
+       
+        height: 50vh;
+
+    }
+    100%{
+       height: 100%;
+    }
+    
+    
+}
+
+/*nav bar */
+.navbar-nav .nav-link.active{
+    border-radius: 2px solid white;
+}
+
+/*animation */
+
+@keyframes jobs-ani {
+    2%{
+        content: "D|";
+    }
+    4%{
+        content: "De|";
+    }
+    6%{
+        content: "Dev|";
+    }
+    8%{
+        content: "Deve|";
+    }
+    10%{
+        content: "Devel|";
+    }
+    12%{
+        content: "Develo|";
+    }
+    14%{
+        content: "Develop|";
+    }
+    16%{
+        content: "Develope|";
+    }
+    18%{
+        content: "Developer|";
+    }
+    20%{
+        content: "Develope|";
+    }
+    22%{
+        content: "Develop|";
+    }
+    24%{
+        content: "Develo|";
+    }
+    26%{
+        content: "Devel|";
+    }
+    28%{
+        content: "Deve|";
+    }
+    30%{
+        content: "Dev|";
+    }
+    32%{
+        content: "De|";
+    }
+    34%{
+        content: "D|";
+    }
+    36%{
+        content: "De|";
+    }
+    38%{
+        content: "Des|";
+    }
+    40%{
+        content: "Desi|";
+    }
+    42%{
+        content: "Desig|";
+    }
+    44%{
+        content: "Design|";
+    }
+    46%{
+        content: "Designe|";
+    }
+    48%{
+        content: "Designer|";
+    }
+    50%{
+        content: "Designe|";
+    }
+    52%{
+        content: "Design|";
+    }
+    54%{
+        content: "Desig|";
+    }
+    56%{
+        content: "Desi|";
+    }
+    58%{
+        content: "Des|";
+    }
+    60%{
+        content: "De|";
+    }
+    62%{
+        content: "D|";
+    }
+   
+    66%{
+        content: "l|";
+    }
+    68%{
+        content: "la|";
+    }
+    70%{
+        content: "lar|";
+    }
+    72%{
+        content: "larr|";
+    }
+    74%{
+        content: "larry|";
+    }
+    76%{
+        content: "larry |";
+    }
+    78%{
+        content: "larry D|";
+    }
+    80%{
+        content: "larry D|";
+    }
+    82%{
+        content: "larry Da|";
+    }
+    84%{
+        content: "larry Dan|";
+    }
+    86%{
+        content: "larry Dani|";
+    }
+    88%{
+        content: "larry Dania|";
+    }
+    90%{
+        content: "larry Danial|";
+    }
+    92%{
+        content: "larry Dani|";
+    }
+    94%{
+        content: "larry D|";
+    }
+    96%{
+        content: "larry|";
+    }
+    97%{
+        content: "lar|";
+    }
+    98%{
+        content: "la|";
+    }
+    100%{
+        content: "l|";
+    }
+    
+}
+
+
+.par-animation::after{
+    content: " |";
+    animation-name: jobs-ani;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+
+
+header.header{
+    background-image: url("../img/bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name:slideto-top-btm ;
+        animation-duration: 2s;
+    
+  
+}
+
+
+
+
+
+
+
+.header-layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.47);
+
+  
+}
+
+.header-title{
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+
+
+/*about*/
+.skill-progress{
+    min-height: 130px;
+}
+.skill-1 .progress {
+    position: relative;
+    
+    height: 25px;
+}
+
+.skill-1 .progress-content{
+ position: absolute;
+ width: 95%;
+ top: 0;
+ left: 0;
+ background-color: black;
+ color: aliceblue;
+ height: 100%;
+ border-bottom-right-radius: 10px;
+ border-top-right-radius: 10px;
+ animation-name: from-left-right95 ;
+ animation-duration: 1s;
+ animation-timing-function: ease-in;
+ animation-delay: 1s;
+
+}
+
+@keyframes from-left-right95 {
+    0%{
+        opacity:0;
+        left:-50%
+    }
+
+    50%{
+        opacity: 1;
+        left: 0;
+    }
+    100%{
+        width: 95%;
+    }
+    
+}
+
+.skill-2 .progress {
+    position: relative;
+    height: 25px;
+}
+.skill-2 .progress-content{
+ position: absolute;
+ width: 80%;
+ top: 0;
+ left: 0;
+ background-color: black;
+ color: aliceblue;
+ height: 100%;
+ border-bottom-right-radius: 10px;
+ border-top-right-radius: 10px;
+
+ animation-name: from-left-right80 ;
+ animation-duration: 1s;
+ animation-timing-function: ease-in;
+ animation-delay: 1s;
+}
+@keyframes from-left-right80 {
+    0%{
+        opacity:0;
+        left:-50%
+    }
+
+    50%{
+        opacity: 1;
+        left: 0;
+    }
+    100%{
+        width: 80%;
+    }
+    
+}
+
+.skill-3 .progress {
+    position: relative;
+    height: 25px;
+}
+.skill-3 .progress-content{
+ position: absolute;
+ width: 90%;
+ top: 0;
+ left: 0;
+ background-color: black;
+ color: aliceblue;
+ height: 100%;
+ /* border-end-end-radius: 10px; */
+ border-bottom-right-radius: 10px;
+ border-top-right-radius: 10px;
+
+ animation-name: from-left-right90 ;
+ animation-duration: 1s;
+ animation-timing-function: ease-in;
+ animation-delay: 1s;
+}
+@keyframes from-left-right90 {
+    0%{
+        opacity:0;
+        left:-50%
+    }
+
+    50%{
+        opacity: 1;
+        left: 0;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+
+.btn{
+    border: 1px solid black;
+}
+.btn-dark:hover{
+   background-color: white;
+   color: black;
+}
+
+.btn-light:hover{
+    background-color: black;
+    color: white;
+}
+
+
+/*about left side */
+
+.img-container{
+   position: relative;
+}
+.img-container-style{
+    position: absolute;
+    background-image: url("../img/dots.png");
+    z-index: -2;
+   
+    width: 70%;
+    height: 60%;
+    bottom: 0;
+    left: 0;
+}
+.img-container img{
+    width: 95%;
+  
+}
+
+/* services */
+#services{
+    background-color: var(--section-color);
+    
+}
+
+
+
+#services  h6 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#services p{
+    word-spacing: 2px;
+    font-size: 16px;
+   
+}
+
+.services-card-con {
+    background-color: #ffffff ;
+}
+#services .icon-container{
+    background-color: #ece9e9;
+}
+.services-card-con:hover div.icon-container{
+    background-color: black;
+    
+}
+.services-card-con:hover .icon-container i{
+   color: white;
+}
+
+/*work section */
+
+
+#work{
+    margin-top: 50px
+}
+.services-container img{
+    width: 100%;
+}
+.services-container{
+    position: relative;
+    
+}
+.services-container:hover .services-container-layer{
+ 
+ visibility: visible; 
+ animation-name: from-top-bot;
+    animation-duration: 2s;
+}
+.services-container-layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgb(243, 240, 240);
+    transition: all 1s;  
+    
+   
+    visibility: hidden;
+}
+@keyframes from-top-bot {
+    0%{
+        height:60%;
+    }
+    100%{
+        height: 90%;
+       
+    }
+    
+}
+
+#work .nav-tabs .nav-link.active{
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    
+}
+
+#work .nav-tabs .nav-link{
+    color: black;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+#work .nav-tabs{
+    border: none;
+   
+}
+
+
+
+/*testemonial */
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #999999;
+    margin-left: 5px;
+}
+    
+
+/* counter */
+.counter{
+    min-height: 20rem;
+}
+
+/*footer */
+.footer{
+    height: 80px;
+}
+
+
+/*blog */
+
+.card-img-top{
+    width: 100%;
+}
+.btn{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0%;
+    
+}
+
